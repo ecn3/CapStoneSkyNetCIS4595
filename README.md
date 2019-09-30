@@ -1,7 +1,6 @@
 # CapStoneSkyNetCIS4595
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
-GroupProject-Firebase is the current build
 
 ## Development server
 
