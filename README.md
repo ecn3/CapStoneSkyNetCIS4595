@@ -8,6 +8,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Firebase Link
 
+https://coderoom-capstone.firebaseapp.com/
+
 ## Deploy to Firebase
 firebase serve --only hosting // if you want to see in local browser
 firebase serve
