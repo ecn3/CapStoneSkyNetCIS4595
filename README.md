@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. In is deployed on Firebase
 
+## Trello
+
+https://trello.com/b/3vAuY38k/capstoneskynet
+
+## Slack
+
+https://app.slack.com/client/TN2444LUU/CN4DT8E23
+
+## OneDrive
+
+https://drive.google.com/drive/u/1/folders/1sgR2FtFbhoHfn9my4J8KqH_RZurFzKLE
+
 ## How to run commands
 
 In the visual studio code terminal navigate to **\CapStoneSkyNetCIS4595\codeRoomApp. The ** will be where you saved the git repo to. Next type in the command and press enter.
