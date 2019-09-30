@@ -16,9 +16,9 @@ https://coderoom-capstone.firebaseapp.com/
 
 ## Deploy to Firebase
 
-Run `ng build --prod` // builds project in the dist folder
-Run `firebase login` //you will login using your student email
-Run `firebase serve --only hosting`  // if you want to see in local browser
+Run `ng build --prod` // builds project in the dist folder <br />
+Run `firebase login` //you will login using your student email <br />
+Run `firebase serve --only hosting`  // if you want to see in local browser <br />
 Run `firebase deploy`  // sends to https://coderoom-capstone.firebaseapp.com/. You will need to refresh the page to see changes.
 
 ## Code scaffolding
