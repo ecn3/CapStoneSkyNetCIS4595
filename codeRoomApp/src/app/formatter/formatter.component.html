@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body {background-color: rgb(255, 235, 217);}
+
+div.title {
+  position: relative;
+  top: 150px;
+  left: 2px;
+  margin-left: 30%;
+
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+textarea {
+  position: relative;
+  top: 152px;
+  margin-left: 30%;
+
+  width: 40%;
+  height: 400px;
+  padding: 0px 4px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  overflow: auto;
+
+  font-size: 14px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+select.langmenu {
+  position: relative;
+  bottom: 230px;
+}
+
+div.button {
+    position:relative;
+    top: 160px;
+    margin-left: 65%;
+}
+
+</style>
+  <head>
+    <title>CodeRoom</title>
+  </head>
+  <body>
+
+    <div class="title">Insert Code Snippet</div>
+    <textarea spellcheck="false"></textarea>
+    <select class="langmenu">
+        <option value="">Select Language</option>
+        <option value="Java">Java</option>
+        <option value="C">C</option>
+        <option value="Python">Python</option>
+        <option value="etc">etc</option>
+    </select>
+    <div class="button">Post button here</div>
+
+  </body>
+</html>

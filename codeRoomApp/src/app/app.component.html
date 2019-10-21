@@ -1,7 +1,57 @@
+<!DOCTYPE html>
+<html>
+<style>
 
-  <h1>
-    Home Page
-  </h1>
+body {background-color: rgb(255, 235, 217);}
+
+
+div.title {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+div.button {
+  position: relative;
+  top: 300px;
+  text-align:center;
+}
+
+div.circle {
+  position:relative;
+  top: 125px;
+  right: 50px;
+  height: 100px;
+  width: 100px;
+  margin-left: 50%;
+  background-color: rgb(197, 0, 0);
+  border-radius: 50%;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: medium;
+
+  text-align: center;
+  line-height: 100px;
+  font-size: 32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+</style>
+  <head>
+    <title>CodeRoom</title>
+  </head>
+  <body>
+
+    <div class="title">Welcome to CodeRoom</div>
+    <div class="circle">CR</div>
+    <div class="button">Login button goes here</div>
+
+  </body>
+</html>
 
 <router-outlet>
   
@@ -9,3 +59,4 @@
 <footer>
   @SkyNet Capstone
 </footer>
+
