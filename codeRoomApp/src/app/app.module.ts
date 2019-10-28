@@ -3,19 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { GroupComponent } from './group/group.component';
 import { FormatterComponent } from './formatter/formatter.component';
-
-import { LoginComponent } from './login/login.component';
-
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GroupComponent,
     FormatterComponent,
-    LoginComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,

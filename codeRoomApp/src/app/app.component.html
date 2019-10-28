@@ -2,42 +2,99 @@
 <html>
 <style>
 
-body {background-color: rgb(255, 235, 217);}
-
+body {
+  margin: 0;
+  overflow: hidden;
+}
 
 div.title {
   position: relative;
+  margin: auto;
   top: 100px;
+
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  width: 800px;
+
   text-align: center;
   font-size: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
 }
 
-div.button {
-  position: relative;
-  top: 300px;
-  text-align:center;
+a.homeButton:link {
+  float: left;
+
+  height: 80px;
+  width: 100px;
+  cursor: pointer;
 }
 
-div.circle {
-  position:relative;
-  top: 125px;
-  right: 50px;
-  height: 100px;
-  width: 100px;
-  margin-left: 50%;
-  background-color: rgb(197, 0, 0);
-  border-radius: 50%;
-  outline-style: solid;
-  outline-color: black;
-  outline-width: medium;
+img.logo {
+  position: relative;
+  left: 8px;
+
+  width: 80px;
+  cursor: pointer;
+}
+
+div.loginButton {
+  position: relative;
+  margin: auto;
+  top: 300px;
+
+  background-color: rgb(255, 150, 150);
+  border: 2px solid red;
+  border-radius: 4px;
+  width: 150px;
+  padding: 15px 32px;
+  cursor: pointer;
 
   text-align: center;
-  line-height: 100px;
-  font-size: 32px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.loginButton:hover {
+  background-color: rgb(255, 100, 100);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+img.googleLogo {
+  position: relative;
+  left: 2px;
+  top: 5px;
+  width: 50px;
+}
+
+div.pBox {
+  position: relative;
+  top: 500px;
+
+  width: 100%;
+  height: 240px;
+
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: honeydew;
+}
+
+div.p {
+  position: relative;
+  margin: auto;
+  top: 20px;
+
+  width: 1120px;
+  padding: 20px 20px;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+
+  text-align: center;
+  line-height: 2;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 </style>
@@ -45,18 +102,20 @@ div.circle {
     <title>CodeRoom</title>
   </head>
   <body>
-
+    <a class="homeButton" href="app.component.html">
+      <img class="logo" src="../assets/images/logo.png"></img>
+    </a>
     <div class="title">Welcome to CodeRoom</div>
-    <div class="circle">CR</div>
-    <div class="button">Login button goes here</div>
-
+    <div class="loginButton">Login with 
+      <img class="googleLogo" src="../assets/images/googlelogo.png"></img>
+    </div>
+    <div class="pBox">
+      <div class="p">
+        CodeRoom is a code sharing website designed to keep your code formatted correctly as you share it.<br>
+        Simply login using your Google account, create a room, input your code snippet, and post your code.<br>
+        Your unique Google ID is the key to your room, all you have to do is share it with whoever you want to give access to your code.<br>
+        After entering it, your fellow developers can access the formatted code until you post a new snippet.
+      </div>
+    </div>
   </body>
 </html>
-
-<router-outlet>
-  
-</router-outlet>
-<footer>
-  @SkyNet Capstone
-</footer>
-
