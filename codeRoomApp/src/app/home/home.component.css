@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  div.menuBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 80px ;
+    overflow: hidden;
+    background-color: #333;
+  }
+  a.homeButton:link {
+    float: left;
+    height: 80px;
+    width: 100px;
+    border-right: 2px solid black;
+    cursor: pointer;
+  }
+  a.homeButton:visited {
+    border-right: 2px solid black;
+  }
+  a.homeButton:hover {
+    background-color: #111;
+  }
+  img.logo {
+    position: relative;
+    left: 8px;
+    width: 80px;
+    cursor: pointer;
+  }
+  a.myPostsButton {
+    padding: 25px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  a.myPostsButton:link {
+    float: left;
+    height: 80px;
+    width: 120px;
+    border-right: 2px solid black;
+    cursor: pointer;
+  }
+  a.myPostsButton:visited {
+    border-right: 2px solid black;
+  }
+  a.myPostsButton:hover {
+    background-color: #111;
+  }
+  div.myIDButton {
+    float: left;
+    height: 80px;
+    width: 120px;
+    padding: 25px 20px;
+    cursor: pointer;
+    border-right: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  div.myIDButton:hover {
+    background-color: #111;
+  }
+  div.helpButton {
+    float: left;
+    height: 80px;
+    width: 120px;
+    padding: 25px 20px;
+    cursor: pointer;
+    border-right: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  div.helpButton:hover {
+    background-color: #111;
+  }
+  div.logoutButton {
+    float: right;
+    height: 80px;
+    width: 120px;
+    padding: 25px 20px;
+    cursor: pointer;
+    border-left: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  div.logoutButton:hover {
+    background-color: #111;
+  }
+  div.title {
+    position: relative;
+    top: 25px;
+    left: 100px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  div.createPostCard {
+    position: relative;
+    top: 200px;
+    margin-left: 15%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    background-color: rgb(175, 232, 255);
+    width: 30%;
+    height: 200px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  div.createPostCard:hover {
+    background-color: rgb(140, 222, 255);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+  }
+  div.createPostHeader {
+    position: relative;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  div.createPostText {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  div.joinGroupCard {
+    position: relative;
+    top: 200px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    background-color: rgb(216, 255, 180);
+    width: 30%;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  div.joinGroupHeader {
+    position: relative;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  div.joinGroupText {
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  input.IDField {
+    position: relative;
+    top: 40px;
+    width: 80%;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  div.joinGroupButton {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    background-color: rgb(100, 255, 100);
+    border: 2px solid green;
+    border-radius: 4px;
+    width: 50px;
+    padding: 4px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  div.joinGroupButton:hover {
+    background-color: rgb(85, 216, 85);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.19);
+  }
+  
