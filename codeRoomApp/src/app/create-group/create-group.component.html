@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body {
+  margin: 0;
+}
+
+
+
+div.title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  width: 30%;
+  padding: 10px 0px;
+
+  text-align: center;
+  font-size: 32px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+div.groupNameHeader {
+  position: absolute;
+  top: calc(25% + 70px);
+  left: 50%;
+  transform: translate(-50%, -25%);
+
+  text-align: center;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+input.nameField {
+  position: absolute;
+  top: calc(25% + 108px);
+  left: 50%;
+  transform: translate(-50%, -25%);
+
+  border-color: black;
+  width: 30%;
+
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.addMembersHeader {
+  position: absolute;
+  top: calc(40% + 100px);
+  left: 50%;
+  transform: translate(-50%, -40%);
+
+  text-align: center;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+div.addMembersBox {
+  position: absolute;
+  top: calc(40% + 140px);
+  left: 50%;
+  transform: translate(-50%, -40%);
+
+  width: 50%;
+}
+
+input.addMembersField {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  border-color: black;
+  width: 30%;
+
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.addAnotherButton {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  width: 30%;
+  padding-bottom: 100px;
+  cursor: pointer;
+
+  text-align: center;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: skyblue;
+}
+
+div.emptySpace {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+
+  width: 100%;
+  height: 200px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+var bottomFieldID = 1;
+var offset = 40;
+
+function addAnother() {
+  //Change add button to input field
+  var addButton = document.getElementById("Button");
+  var newMembersField = '<input class="addMembersField" type="text" style="top: 0px;" id="F1">';
+  newMembersField = newMembersField.replace("0px", offset.toString() + "px");
+  newMembersField = newMembersField.replace("F1", "F" + bottomFieldID.toString());
+  
+  addButton.outerHTML = newMembersField;
+
+  //Create new add button
+  var newAddButton = '<div class="addAnotherButton" onclick="addAnother()" style="top: 0px;" id="Button">+ Add Another Member</div>';
+  newAddButton = newAddButton.replace("0px", (offset + 40).toString() + "px");
+
+  //Add new button to container
+  var boxElement = document.getElementById("addMembersBox");
+  $(boxElement).append(newAddButton);
+
+  //Increase variables
+  bottomFieldID += 1;
+  offset += 40;
+}
+
+
+</script>
+
+<head>
+  <title>CodeRoom</title>
+</head>
+<body>
+  <div class="title">Create Your Group</div>
+  <div class="groupNameHeader">Group Name:</div>
+  <input class="nameField" type="text">
+  <div class="addMembersHeader">Add Members to Group(by Email):</div>
+  <div class="addMembersBox" id="addMembersBox">
+    <input class="addMembersField" type="text" style="top: 0px;" id="F1">
+    <div class="addAnotherButton" onclick="addAnother()" style="top: 40px;" id="Button">+ Add Another Member</div>
+  </div>
+  <div class="emptySpaceBox"></div>
+</body>
+</html>
