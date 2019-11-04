@@ -1,34 +1,45 @@
 # CapStoneSkyNetCIS4595
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. In is deployed on Firebase
+
+## Trello
+
+https://trello.com/b/3vAuY38k/capstoneskynet
+
+## Slack
+
+https://app.slack.com/client/TN2444LUU/CN4DT8E23
+
+## OneDrive
+
+https://drive.google.com/drive/u/1/folders/1sgR2FtFbhoHfn9my4J8KqH_RZurFzKLE
+
+## How to run commands
+
+In the visual studio code terminal navigate to **\CapStoneSkyNetCIS4595\codeRoomApp. The ** will be where you saved the git repo to. Next type in the command and press enter.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. This allows you to test the changes you have made to the code locally. 
 
 ## Firebase Link
 
 https://coderoom-capstone.firebaseapp.com/
 
 ## Deploy to Firebase
-firebase serve --only hosting // if you want to see in local browser
-firebase serve
+
+Run `ng build --prod` // builds project in the dist folder <br />
+Run `firebase login` //you will login using your student email <br />
+Run `firebase serve --only hosting`  // if you want to see in local browser <br />
+Run `firebase deploy`  // sends to https://coderoom-capstone.firebaseapp.com/. You will need to refresh the page to see changes.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. A component is a reusable html/css/ts build.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng build --prod` 
 
 ## Further help
 
