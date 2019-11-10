@@ -25,13 +25,13 @@ export class UserService {
       }
     }),
   );
-  isAdmin: Observable<boolean> =this.uid.pipe(
+  isinGroup: Observable<boolean> =this.uid.pipe(
     switchMap(uid => {
       if(!uid){
         return observableOf(false);
       }
       else{
-        return this.db.object<boolean>('/admin/' + uid).valueChanges();
+        return this.db.object<boolean>('/inGroup/' + uid).valueChanges();
       }
     })
   );
