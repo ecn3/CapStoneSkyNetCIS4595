@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { FormatterComponent } from './formatter/formatter.component';
 import { MyGroupsComponent } from './my-groups/my-groups.component';
 import { CreateGroupComponent } from './create-group/create-group.component';
+import { NavbarComponent } from './core/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreateGroupComponent } from './create-group/create-group.component';
     HomeComponent,
     FormatterComponent,
     MyGroupsComponent,
-    CreateGroupComponent
+    CreateGroupComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
