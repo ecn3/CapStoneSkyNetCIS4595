@@ -1,0 +1,11 @@
+.logout {
+    position: absolute;
+    right: 0;
+  } 
+
+  img.logo {
+    position: relative;
+    left: 8px;
+    width: 80px;
+    cursor: pointer;
+  }
