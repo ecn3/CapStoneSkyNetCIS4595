@@ -14,6 +14,7 @@ import { CardComponent } from './card/card.component';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
       messagingSenderId: "487034406062",
     }),
     AngularFireAuthModule,
+    AngularFireDatabaseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
