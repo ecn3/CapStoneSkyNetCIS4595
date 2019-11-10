@@ -12,6 +12,12 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { CardComponent } from './card/card.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { AuthGuard } from './core/auth.guard';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,9 +32,19 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyAuwZ4icjVq2R37apLYhTQUtbeNB68eTO0",
+      authDomain: "coderoom-capstone.firebaseapp.com",
+      databaseURL: "https://coderoom-capstone.firebaseio.com",
+      projectId: "coderoom-capstone",
+      storageBucket: "coderoom-capstone.appspot.com",
+      messagingSenderId: "487034406062",
+    }),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

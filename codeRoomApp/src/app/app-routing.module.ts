@@ -7,12 +7,14 @@ import { FormatterComponent } from './formatter/formatter.component';
 import { MyGroupsComponent } from './my-groups/my-groups.component';
 import { PostComponent } from './post/post.component';
 
+import { AuthGuard } from './core/auth.guard';
+
 const routes: Routes = [
-  { path: 'home', component: HomeComponent }, 
-  { path: 'formatter', component: FormatterComponent }, 
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] }, 
+  { path: 'formatter', component: FormatterComponent , canActivate: [AuthGuard]}, 
   { path: 'login', component: LoginComponent }, 
-  { path: 'my_groups', component: MyGroupsComponent }, 
-  { path: 'post', component: PostComponent }, 
+  { path: 'my_groups', component: MyGroupsComponent, canActivate: [AuthGuard] }, 
+  { path: 'post', component: PostComponent, canActivate: [AuthGuard] }, 
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login'}
 ];
