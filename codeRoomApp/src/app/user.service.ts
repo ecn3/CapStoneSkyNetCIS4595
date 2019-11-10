@@ -25,13 +25,13 @@ export class UserService {
       }
     }),
   );
-  isinGroup: Observable<boolean> =this.uid.pipe(
+  isInGroup: Observable<boolean> = this.uid.pipe(
     switchMap(uid => {
       if(!uid){
         return observableOf(false);
       }
       else{
-        return this.db.object<boolean>('/inGroup/' + uid).valueChanges();
+        return this.db.object<boolean>('/InGroup/' + uid).valueChanges();
       }
     })
   );

@@ -1,7 +1,7 @@
 <div *ngIf="user.uid | async as uid; else login">
     Welcome user, this is the account for {{uid}}
     <div *ngIf="user.isInGroup | async">
-      <!-- You are an in the group, this <a routerLink="/groupPage">way</a> to admin page! -->
+     You are an in the group
     </div>
     <div><button (click)="user.logout()">Logout</button></div>
   </div>
