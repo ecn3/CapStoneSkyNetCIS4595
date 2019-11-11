@@ -179,7 +179,7 @@ div.title {
   font-weight: bold;
 }
 
-a.createGroupCard {
+div.createGroupCard {
   position: absolute;
   top: 25%;
   left: 15%;
@@ -191,18 +191,12 @@ a.createGroupCard {
   width: 30%;
   height: 200px;
   display: inline-block;
-  cursor: pointer;
 
   text-align: center;
   text-decoration: none;
   font-size: 24px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
-}
-
-a.createGroupCard:hover {
-  background-color: rgb(140, 222, 255);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.3);
 }
 
 div.createGroupHeader {
@@ -227,6 +221,30 @@ div.createGroupText {
   text-align: center;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a.createGroupButton {
+  position: relative;
+  top: 75px;
+  margin: auto;
+
+  background-color: rgb(130, 180, 255);
+  border: 2px solid blue;
+  border-radius: 4px;
+  width: 50px;
+  padding: 4px 20px;
+  cursor: pointer;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+a.createGroupButton:hover {
+  background-color: rgb(110, 168, 255);
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.19);
 }
 
 div.joinGroupCard {
@@ -297,11 +315,11 @@ div.joinGroupButton {
 }
 
 div.joinGroupButton:hover {
-  background-color: rgb(85, 216, 85);
+  background-color: rgb(90, 231, 90);
   box-shadow: 0 8px 8px 0 rgba(0,0,0,0.19);
 }
 
-a.myGroupsCard {
+div.groupsCard {
   position: absolute;
   top: 60%;
   left: 35%;
@@ -313,7 +331,6 @@ a.myGroupsCard {
   width: 30%;
   height: 200px;
   display: inline-block;
-  cursor: pointer;
 
   text-align: center;
   text-decoration: none;
@@ -322,12 +339,7 @@ a.myGroupsCard {
   color: black;
 }
 
-a.myGroupsCard:hover {
-  background-color: rgb(255, 225, 142);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.3);
-}
-
-div.myGroupsHeader {
+div.groupsHeader {
   position: relative;
 
   border-bottom: 2px solid grey;
@@ -339,7 +351,7 @@ div.myGroupsHeader {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-div.myGroupsText {
+div.groupsText {
   position: relative;
   top: 70px;
 
@@ -349,6 +361,30 @@ div.myGroupsText {
   text-align: center;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a.groupsButton {
+  position: relative;
+  top: 75px;
+  margin: auto;
+
+  background-color: rgb(255, 210, 121);
+  border: 2px solid orange;
+  border-radius: 4px;
+  width: 50px;
+  padding: 4px 20px;
+  cursor: pointer;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+a.groupsButton:hover {
+  background-color: rgb(255, 200, 91);
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.19);
 }
 </style>
 
@@ -380,19 +416,21 @@ function getEmail() {
   </div>
   <div class="myEmailPopup" id="myEmailPopup">Email copied to<br>clipboard. (TODO)</div>
   <div class="title">CodeRoom Home</div>
-  <a class="createGroupCard" href="../create-group/create-group.component.html">
+  <div class="createGroupCard">
     <div class="createGroupHeader">Create Group</div>
-    <div class="createGroupText">Start a group so others can share code.</div>
-  </a>
+    <div class="createGroupText">Start a group so you and others can share code.</div>
+    <a class="createGroupButton" href="../create-group/create-group.component.html">Create</a>
+  </div>
   <div class="joinGroupCard">
     <div class="joinGroupHeader">Join Group</div>
     <div class="joinGroupText">Enter group owner's email:</div>
     <input class="IDField" type="text">
     <div class="joinGroupButton">Join</div>
   </div>
-  <a class="myGroupsCard" href="../my-groups/my-groups.component.html">
-    <div class="myGroupsHeader">My Groups</div>
-    <div class="myGroupsText">See all of the groups you're in.</div>
-  </a>
+  <div class="groupsCard">
+    <div class="groupsHeader">My Groups</div>
+    <div class="groupsText">See all of the groups you're in.</div>
+    <a class="groupsButton" href="../my-groups/my-groups.component.html">Groups</a>
+  </div>
 </body>
 </html>

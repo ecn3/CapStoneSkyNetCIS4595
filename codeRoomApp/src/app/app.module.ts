@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { CreateGroupComponent } from './create-group/create-group.component';
 import { HelpComponent } from './help/help.component';
 import { MyGroupsComponent } from './my-groups/my-groups.component';
+import { GroupPostsComponent } from './group-posts/group-posts.component';
+import { PostViewComponent } from './post-view/post-view.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MyGroupsComponent } from './my-groups/my-groups.component';
     HomeComponent,
     CreateGroupComponent,
     HelpComponent,
-    MyGroupsComponent
+    MyGroupsComponent,
+    GroupPostsComponent,
+    PostViewComponent
   ],
   imports: [
     BrowserModule,

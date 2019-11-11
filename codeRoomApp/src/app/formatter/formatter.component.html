@@ -4,150 +4,24 @@
 
 body {
   margin: 0;
-  overflow: hidden;
-}
-
-div.menuBar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: 80px ;
-  overflow: hidden;
-  background-color: #333;
-}
-
-a.homeButton:link {
-  float: left;
-
-  height: 80px;
-  width: 100px;
-  border-right: 2px solid black;
-  cursor: pointer;
-}
-
-a.homeButton:visited {
-  border-right: 2px solid black;
-}
-
-a.homeButton:hover {
-  background-color: #111;
-}
-
-img.logo {
-  position: relative;
-  left: 8px;
-
-  width: 80px;
-  cursor: pointer;
-}
-
-a.myPostsButton {
-  padding: 25px 20px;
-
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  color: white;
-}
-
-a.myPostsButton:link {
-  float: left;
-
-  height: 80px;
-  width: 120px;
-  border-right: 2px solid black;
-  cursor: pointer;
-}
-
-a.myPostsButton:visited {
-  border-right: 2px solid black;
-}
-
-a.myPostsButton:hover {
-  background-color: #111;
-}
-
-div.myIDButton {
-  float: left;
-
-  height: 80px;
-  width: 120px;
-  padding: 25px 20px;
-  cursor: pointer;
-  border-right: 2px solid black;
-
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  color: white;
-}
-
-div.myIDButton:hover {
-  background-color: #111;
-}
-
-div.helpButton {
-  float: left;
-
-  height: 80px;
-  width: 120px;
-  padding: 25px 20px;
-  cursor: pointer;
-  border-right: 2px solid black;
-
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  color: white;
-}
-
-div.helpButton:hover {
-  background-color: #111;
-}
-
-div.logoutButton {
-  float: right;
-
-  height: 80px;
-  width: 120px;
-  padding: 25px 20px;
-  cursor: pointer;
-  border-left: 2px solid black;
-
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  color: white;
-}
-
-div.logoutButton:hover {
-  background-color: #111;
 }
 
 div.title {
   position: absolute;
   top: 20%;
-  left: 20%;
+  left: 10%;
 
   font-size: 24px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
-textarea {
+textarea.post {
   position: absolute;
   top: calc(20% + 32px);
-  left: 20%;
+  left: 10%;
 
-  width: 800px;
+  width: 70%;
   height: 400px;
   padding: 0px 4px;
   border: 2px solid #ccc;
@@ -161,13 +35,13 @@ textarea {
 select.langmenu {
   position: absolute;
   top: calc(20% + 32px);
-  left: calc(20% + 815px);
+  left: calc(80% + 15px);
 }
 
 div.postButton {
   position: absolute;
   top: calc(20% + 438px);
-  left: calc(20% + 718px);
+  left: calc(80% - 82px);
 
   background-color: rgb(100, 255, 100);
   border: 2px solid green;
@@ -191,17 +65,8 @@ div.postButton:hover {
   <title>CodeRoom</title>
 </head>
 <body>
-  <div class="menuBar">
-    <a class="homeButton" href="home.component.html">
-      <img class="logo" src="../../assets/images/logo.png"></img>
-    </a>
-    <a class="myPostsButton" href="">My Posts</a>
-    <div class="myIDButton">Get My ID</div>
-    <div class="helpButton">Help</div>
-    <div class="logoutButton">Logout</div>
-  </div>
   <div class="title">Insert Code Snippet</div>
-  <textarea spellcheck="false"></textarea>
+  <textarea class="post" spellcheck="false"></textarea>
   <div class="postButton">Post</div>
   <select class="langmenu">
     <option value="">Select Language</option>
