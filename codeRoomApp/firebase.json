@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/codeRoomApp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
