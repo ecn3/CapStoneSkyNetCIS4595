@@ -9,7 +9,9 @@ export class CreateGroupComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(
+    
+  ) {
   }
 
 }
