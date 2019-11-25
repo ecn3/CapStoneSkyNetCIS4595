@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+  }
+  textarea.postField {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: calc(80% - 4px);
+    height: 400px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    font-family: Consolas, 'Courier New', monospace;
+  }
+  div.post {
+    position: absolute;
+    top: calc(20% - 50px);
+    left: 10%;
+    width: 80%;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 4px;
+    background-color: white;
+  }
+  div.postDetail {
+    float: left;
+    height: 33px;
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 40px;
+    border-right: 2px solid green;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  div.copyButton {
+    position: absolute;
+    top: calc(20% + 410px);
+    left: calc(90% - 168px);
+    background-color: rgb(100, 255, 100);
+    border: 2px solid green;
+    border-radius: 4px;
+    width: 128px;
+    padding: 4px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  div.copyButton:hover {
+    background-color: rgb(85, 216, 85);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.19);
+  }

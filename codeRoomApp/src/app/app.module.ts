@@ -17,6 +17,9 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AuthGuard } from './core/auth.guard';
+import { GroupPostsComponent } from './group-posts/group-posts.component';
+import { HelpComponent } from './help/help.component';
+import { PostViewComponent } from './post-view/post-view.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { AuthGuard } from './core/auth.guard';
     NavbarComponent,
     PostComponent,
     CardComponent,
+    GroupPostsComponent,
+    HelpComponent,
+    PostViewComponent,
   ],
   imports: [
     BrowserModule,
