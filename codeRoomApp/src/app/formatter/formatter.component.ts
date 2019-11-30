@@ -84,7 +84,17 @@ for(let i = 0; i < lengthOfLine; i ++){
     this.code += this.line[i] +'\n'; 
   }
 }
-
+//indent all code in methods by 10 spaces
+this.line = this.code.split("\n");
+lengthOfLine = this.line.length;
+this.code = '';
+for(let i = 0; i < lengthOfLine; i ++){
+  if(this.line[i].includes(';')){
+    this.code += '          '+this.line[i] +'\n'; 
+  }else{
+    this.code += this.line[i] +'\n'; 
+  }
+}
 }
   postText(): void {
   }
