@@ -1,10 +1,11 @@
-<div class="title">Insert Code Snippet</div>
-    <textarea spellcheck="false">{{textValue}}</textarea>
-    <div class="postButton"><button (click)="formatText()">Post</button></div>
-    <select class="langmenu">
-        <option value="">Select Language</option>
-        <option value="Java">Java</option>
-        <option value="C">C</option>
-        <option value="Python">Python</option>
-        <option value="etc">etc</option>
-    </select>
+<p class="post">{{post}}</p>
+<textarea spellcheck="false">{{textValue}}</textarea>
+<div class="formatButton"><button (click)="formatText()">Format</button></div>
+<div class="postButton"><button (click)="postText()">Post</button></div>
+<select class="langmenu">
+  <option value="">Select Language</option>
+  <option value="Java">Java</option>
+  <option value="C">C</option>
+  <option value="Python">Python</option>
+  <option value="etc">etc</option>
+</select>

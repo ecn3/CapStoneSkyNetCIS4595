@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FormatterComponent implements OnInit {
 
 
+  post = "";
   textValue = 'public class test{public static void main( String args[] ){System.out.println("Hello world");}}';
   formatted = 'public class test {'+ '\n'+
   '    public static void main(String args[]) {'+'\n'+
@@ -16,6 +17,9 @@ export class FormatterComponent implements OnInit {
 
   formatText(): void {
     this.textValue = this.formatted;
+  }
+  postText(): void {
+    this.post = this.formatted;
   }
   constructor() { 
 

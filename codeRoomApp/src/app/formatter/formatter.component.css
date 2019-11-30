@@ -112,11 +112,11 @@ body {
     font-weight: bold;
   }
   textarea {
-    position: relative;
-    top: 152px;
+    position: absolute;
+    top: 500px;
     left: 20%;
     width: 800px;
-    height: 400px;
+    height: 200px;
     padding: 0px 4px;
     border: 2px solid #ccc;
     background-color: #f8f8f8;
@@ -125,20 +125,35 @@ body {
     font-family: Consolas, 'Courier New', monospace;
   }
   select.langmenu {
-    position: relative;
-    bottom: 287px;
+    position: absolute;
+    top: 500px;
     margin-left: 20%;
-    left: 815px;
+    left: 800px;
   }
-  div.postButton {
-    position: relative;
-    top: 150px;
+  div.formatButton {
+    position: absolute;
+    top: 600px;
     margin-left: 20%;
-    left: 718px;
+    left: 800px;
     background-color: rgb(100, 255, 100);
     border: 2px solid green;
     border-radius: 4px;
-    width: 90px;
+    width: 110px;
+    padding: 4px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  div.postButton {
+    position: absolute;
+    top: 550px;
+    margin-left: 20%;
+    left: 800px;
+    background-color: rgb(100, 255, 100);
+    border: 2px solid green;
+    border-radius: 4px;
+    width: 110px;
     padding: 4px 20px;
     cursor: pointer;
     text-align: center;
@@ -148,4 +163,8 @@ body {
   div.postButton:hover {
     background-color: rgb(85, 216, 85);
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.19);
+  }
+  .post{
+    position: absolute;
+    left: 270px;
   }
