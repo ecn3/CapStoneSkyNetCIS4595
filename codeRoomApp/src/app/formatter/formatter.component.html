@@ -1,6 +1,6 @@
 <code class="code">{{code}}</code>
-<textarea spellcheck="false">{{textValue}}</textarea>
-<div class="formatButton"><button (click)="formatText()">Format</button></div>
+<input type="textArea" #textArea value="{{textValue}}">
+<div class="formatButton"><button (click)="formatText(textArea.value)">Format</button></div>
 <div class="postButton"><button (click)="postText()">Post</button></div>
 <select class="langmenu">
   <option value="">Select Language</option>

@@ -111,7 +111,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
   }
-  textarea {
+  input {
     position: absolute;
     top: 500px;
     left: 20%;
