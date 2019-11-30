@@ -11,7 +11,7 @@ export class FormatterComponent implements OnInit {
   line;
   code = "";
   spaceTriggred = 0;
-  textValue = 'public class test  {public String myTest;public static void main( String args[] ) {System.out.println("Hello world");System.out.println("Second line");}public void setTest( String test )  {myTest = test;}private String getTest( )  {return myTest;}}';
+  textValue = 'public class test  {public String myTest;public static void main( String args[] ) {if(true){System.out.println("Hello world");} else{System.out.println("Second line");}}public void setTest( String test )  {myTest = test;}private String getTest( )  {return myTest;}}';
 
   formatText(textValue): void {
   this.code = ''; // reset code
@@ -99,7 +99,23 @@ for(let i = 0; i < lengthOfLine; i ++){
     this.code += this.line[i] +'\n'; 
   }
 }
+//indent if methods by 10 spaces
+this.line = this.code.split("if");
+lengthOfLine = this.line.length;
+this.code = '';
+for(let i = 0; i < lengthOfLine; i ++){
+      this.code += this.line[i]+ '          if';
 }
+//indent else methods by 10 spaces
+this.line = this.code.split("else");
+lengthOfLine = this.line.length;
+this.code = '';
+for(let i = 0; i < lengthOfLine; i ++){
+      this.code += this.line[i]+ '         else';
+}
+
+
+} 
   postText(): void {
   }
   constructor() { 
