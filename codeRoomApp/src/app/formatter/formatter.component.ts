@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormatterComponent implements OnInit {
 
-  post;
+  post = "";
   line;
-  code;
+  code = "";
   textValue = 'public class test{public static void main( String args[] ){System.out.println("Hello world");}}';
   formatted = 'public class test {'+ '\n'+
   '    public static void main(String args[]) {'+'\n'+
@@ -17,8 +17,6 @@ export class FormatterComponent implements OnInit {
   '    }'+'\n'+'}';
 
   formatText(): void {
-
-
   this.line = this.textValue.split("{");
 
   var lengthOfLine = this.line.length;
