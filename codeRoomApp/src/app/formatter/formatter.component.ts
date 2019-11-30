@@ -10,6 +10,7 @@ export class FormatterComponent implements OnInit {
   post = "";
   line;
   code = "";
+  spaceTriggred = 0;
   textValue = 'public class test{public static void main( String args[] ){System.out.println("Hello world");}}';
   formatted = 'public class test {'+ '\n'+
   '    public static void main(String args[]) {'+'\n'+
@@ -22,6 +23,12 @@ export class FormatterComponent implements OnInit {
   var lengthOfLine = this.line.length;
 
   for(let i = 0; i < lengthOfLine; i ++){
+
+    for(let j = 0; j < this.spaceTriggred; j ++){
+    this.code += '     ';
+    }
+    this.spaceTriggred++;
+ 
     if(i < lengthOfLine-1){
     this.code += this.line[i] + ' {' + '\n';
     }else {
@@ -35,11 +42,13 @@ export class FormatterComponent implements OnInit {
 
   for(let i = 0; i < lengthOfLine; i ++){
     if(i < lengthOfLine-1){
-      this.code += this.line[i] + '\n'+ ' }';
+      this.code += this.line[i] + '\n'+ '}';
       }else{
     this.code += this.line[i] + '\n';
   }
   }
+
+
 
 }
   postText(): void {
