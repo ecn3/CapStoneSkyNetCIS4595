@@ -11,7 +11,7 @@ export class FormatterComponent implements OnInit {
   line;
   code = "";
   spaceTriggred = 0;
-  textValue = 'public class test  {public String myTest;public static void main( String args[] ) {System.out.println("Hello world");System.out.println("Second line");}public void setTest( String test )  {myTest = test;}public String getTest( )  {return myTest;}}';
+  textValue = 'public class test  {public String myTest;public static void main( String args[] ) {System.out.println("Hello world");System.out.println("Second line");}public void setTest( String test )  {myTest = test;}private String getTest( )  {return myTest;}}';
 
   formatText(textValue): void {
   this.code = ''; // reset code
@@ -70,6 +70,19 @@ for(let i = 0; i < lengthOfLine; i ++){
 }else if(i>0){
   this.code += 'public '+this.line[i] +'\n'; 
 }
+}
+
+//4. indent all private methods by 5 spaces
+this.line = this.code.split("private");
+lengthOfLine = this.line.length;
+this.code = '';
+
+for(let i = 0; i < lengthOfLine; i ++){
+  if(i>0){
+    this.code += '     private '+this.line[i] +'\n'; 
+  }else{
+    this.code += this.line[i] +'\n'; 
+  }
 }
 
 }
