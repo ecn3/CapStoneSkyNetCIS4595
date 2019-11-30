@@ -14,19 +14,16 @@ export class FormatterComponent implements OnInit {
   textValue = 'public class test {public static void main( String args[] ){System.out.println("Hello world");System.out.println("Hello world");}}';
 
   formatText(textValue): void {
-  this.code = '';
-  this.spaceTriggred = 0;
-  this.line = textValue.split("{");
+  this.code = ''; // reset code
+  this.spaceTriggred = 0; 
+  this.line = textValue.split("{"); // first we break up by opening brackets
 
   var lengthOfLine = this.line.length;
-
+  // Format Rules:
+  //1. Break lines on {
   for(let i = 0; i < lengthOfLine; i ++){
 
-    for(let j = 0; j < this.spaceTriggred; j ++){
-    this.code += '     ';
-    }
-    this.spaceTriggred++;
- 
+    // this makes sure we add back in the { unless we are at the last line
     if(i < lengthOfLine-1){
     this.code += this.line[i] + ' {' + '\n';
     }else {
@@ -39,19 +36,17 @@ export class FormatterComponent implements OnInit {
   lengthOfLine = this.line.length;
   this.code = '';
 
+  //2. Break lines on }
   for(let i = 0; i < lengthOfLine; i ++){
-    for(let j = 0; j < this.spaceTriggred; j ++){
-      this.code += '     ';
-      }
-      this.spaceTriggred++;
+    // this makes sure we add back in the } unless we are at the last line
     if(i < lengthOfLine-1){
-      this.code += this.line[i] + '\n'+ '}';
+      this.code += this.line[i]+ '}'+ '\n';
       }else{
     this.code += this.line[i] + '\n';
   }
   }
 
-  
+  //3. Break lines on ;
   this.line = this.code.split(";");
   lengthOfLine = this.line.length;
   if(lengthOfLine > 0){
@@ -59,7 +54,7 @@ export class FormatterComponent implements OnInit {
   for(let i = 0; i < lengthOfLine; i ++){
     if(i < lengthOfLine-1){
     this.code += this.line[i]+ ';' +'\n'; }else{
-    this.code += this.line[i] + '\n';
+    this.code += this.line[i];
     }
   }
 }
