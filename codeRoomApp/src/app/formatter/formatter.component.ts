@@ -24,12 +24,25 @@ export class FormatterComponent implements OnInit {
   var lengthOfLine = this.line.length;
 
   for(let i = 0; i < lengthOfLine; i ++){
-    if(i > 0){
-    this.code += "     "+this.line[i] + '\n';
+    if(i < lengthOfLine-1){
+    this.code += this.line[i] + ' {' + '\n';
     }else {
-    this.code += this.line[0] + '\n';
+    this.code += this.line[i] + '\n';
     }
   }
+
+  this.line = this.code.split("}");
+
+  this.code = '';
+
+  for(let i = 0; i < lengthOfLine; i ++){
+    if(i < lengthOfLine-1){
+      this.code += this.line[i] + '\n'+ ' }';
+      }else{
+    this.code += this.line[i] + '\n';
+  }
+  }
+
 }
   postText(): void {
   }
