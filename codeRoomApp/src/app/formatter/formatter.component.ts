@@ -90,7 +90,11 @@ lengthOfLine = this.line.length;
 this.code = '';
 for(let i = 0; i < lengthOfLine; i ++){
   if(this.line[i].includes(';')){
+    if(this.line[i].includes('     ')){
+      this.code += this.line[i] +'\n'; //this makes sure we dont mess up public variables
+    }else{
     this.code += '          '+this.line[i] +'\n'; 
+    }
   }else{
     this.code += this.line[i] +'\n'; 
   }
