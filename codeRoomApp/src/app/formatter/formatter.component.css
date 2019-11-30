@@ -168,3 +168,7 @@ body {
     position: absolute;
     left: 270px;
   }
+  code {
+    display: block;
+    white-space: pre-wrap   
+  }
