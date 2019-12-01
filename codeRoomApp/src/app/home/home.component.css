@@ -218,9 +218,9 @@ input.IDField {
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-div.joinGroupButton {
+.joinGroupButton {
   position: relative;
-  top: 50px;
+  top: 39px;
   margin: auto;
   background-color: rgb(100, 255, 100);
   border: 2px solid green;
@@ -232,7 +232,7 @@ div.joinGroupButton {
   font-size: 16px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-div.joinGroupButton:hover {
+.joinGroupButton:hover {
   background-color: rgb(85, 216, 85);
   box-shadow: 0 8px 8px 0 rgba(0,0,0,0.19);
 }
