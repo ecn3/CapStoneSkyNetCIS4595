@@ -40,7 +40,11 @@ export class FormatterComponent implements OnInit {
   for(let i = 0; i < lengthOfLine; i ++){
     // this makes sure we add back in the } unless we are at the last line
     if(i < lengthOfLine-1){
+      if(i <lengthOfLine-2){ // last bracket is last
+      this.code += this.line[i]+ '     }'+ '\n';
+    } else {
       this.code += this.line[i]+ '}'+ '\n';
+    }
       }else{
     this.code += this.line[i] + '\n';
   }
