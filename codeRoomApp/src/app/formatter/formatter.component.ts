@@ -13,7 +13,7 @@ export class FormatterComponent implements OnInit {
   spaceTriggred = 0;
   textValue = 'public class test  {public String myTest;public static void main( String args[] ) {if(true){System.out.println("Hello world");} else{System.out.println("Second line");}}public void setTest( String test )  {myTest = test;}private String getTest( )  {return myTest;}}';
 
-  formatText(textValue): void {
+  formatJavaText(textValue): void {
   this.code = ''; // reset code
   this.spaceTriggred = 0; 
   this.line = textValue.split("{"); // first we break up by opening brackets
@@ -38,6 +38,7 @@ export class FormatterComponent implements OnInit {
 
   //2. Break lines on }
   for(let i = 0; i < lengthOfLine; i ++){
+    var j = i -1;
     // this makes sure we add back in the } unless we are at the last line
     if(i < lengthOfLine-1){
       if(i <lengthOfLine-2){ // last bracket is last

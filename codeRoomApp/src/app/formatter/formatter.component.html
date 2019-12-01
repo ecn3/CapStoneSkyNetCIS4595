@@ -1,11 +1,4 @@
 <code class="code">{{code}}</code>
 <input type="textArea" #textArea value="{{textValue}}">
-<div class="formatButton"><button (click)="formatText(textArea.value)">Format</button></div>
+<div class="formatButton"><button (click)="formatJavaText(textArea.value)">Format Java</button></div>
 <div class="postButton"><button (click)="postText()">Post</button></div>
-<select class="langmenu">
-  <option value="">Select Language</option>
-  <option value="Java">Java</option>
-  <option value="C">C</option>
-  <option value="Python">Python</option>
-  <option value="etc">etc</option>
-</select>
