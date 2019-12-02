@@ -11,7 +11,7 @@ export class FormatterComponent implements OnInit {
   line;
   code = "";
   spaceTriggred = 0;
-  textValue = 'public class test  {public String myTest;public static void main( String args[] ) {if(true){System.out.println("Hello world");} else{System.out.println("Second line");}}public void setTest( String test )  {myTest = test;}private String getTest( )  {return myTest;}}';
+  textValue = 'public class test  {public String myTest;public static void main( String args[] ) {System.out.println("Hello world");System.out.println("Second line");}public void setTest( String test )  {myTest = test;}private String getTest( )  {return myTest;}}';
 
   formatJavaText(textValue): void {
   this.code = ''; // reset code
