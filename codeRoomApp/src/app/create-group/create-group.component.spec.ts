@@ -17,10 +17,11 @@ function addAnother() {
   newAddButton = newAddButton.replace("0px", (offset + 40).toString() + "px");
   //Add new button to container
   var boxElement = document.getElementById("addMembersBox");
-  $(boxElement).append(newAddButton);
+  boxElement.append(newAddButton);
   //Increase variables
   bottomFieldID += 1;
   offset += 40;
+}
 
 describe('CreateGroupComponent', () => {
   let component: CreateGroupComponent;
