@@ -16,8 +16,9 @@ function addAnother() {
   var newAddButton = '<div class="addAnotherButton" onclick="addAnother()" style="top: 0px;" id="Button">+ Add Another Member</div>';
   newAddButton = newAddButton.replace("0px", (offset + 40).toString() + "px");
   //Add new button to container
-  var boxElement = document.getElementById("addMembersBox");
+  var boxElement = document.getElementById("addMembersBox"); 
   boxElement.append(newAddButton);
+
   //Increase variables
   bottomFieldID += 1;
   offset += 40;
