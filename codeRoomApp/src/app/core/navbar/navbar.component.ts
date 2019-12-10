@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../user.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,10 +8,11 @@ import { UserService } from '../../user.service';
 export class NavbarComponent implements OnInit {
   navbarOpen = false;
 
+
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
-  constructor(public user: UserService) { }
+  constructor() { }
 
   ngOnInit() {
   }
